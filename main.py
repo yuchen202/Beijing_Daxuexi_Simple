@@ -6,10 +6,10 @@ from study import study
 def getAccounts():
     result = []
 
-    usernameRaw = os.getenv("17671369973")
+    usernameRaw = os.getenv("USERNAME", "")
     if len(usernameRaw.split('\n')) == 1:
         # Single User
-        passwd = os.environ["chyj20011019"]
+        passwd = os.environ["PASSWORD"]
         if usernameRaw and passwd:
             result.append((usernameRaw, passwd))
     else:
